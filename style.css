@@ -6,12 +6,11 @@
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
     text-decoration: none;
-    color: #fff;
 }
 .headerSection{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/back_tech.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/back_tech1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -62,8 +61,8 @@
     top: 30px;
 }
 .navbar img{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 .navmenu{
     display: flex;
@@ -75,4 +74,68 @@
 .navmenu a{
     font-size: 16px;
     font-weight: 700;
+    color: #fff;
+}
+.productMenu{
+    height: 400px;
+    width: 600px;
+    background-color: #fff;
+    position: relative;
+    left: 360px;
+    top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #000;
+    z-index: 1;
+    display: none;
+}
+.productMenu ul{
+    list-style: none;
+    text-align: center;
+}
+.productMenu ul li{
+    color: rgb(3, 3, 3);
+}
+.headContent{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.headContent h1{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+}
+.headContent p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}
+.headContent .headBtn{
+    margin-top: 30px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.headContent .headBtn button{
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 15px 0 15px;
+}
+.headContent .headBtn button:nth-child(2){
+    background-color: #1F3D83;
+    color: #fff;
+}
+.ourService{
+    width: 100vw;
+    height: 100vh;
+
 }

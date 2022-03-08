@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+.headerSection{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/back_tech.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.headContainer{
+   height: 51px;
+   border-bottom: 1px solid #fff;
+}
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+.socialInfo{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+.topNav .loginBtn{
+    width: 150px;
+    height: 50px;
+    background-color: #1F3D83;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px dotted #fff;
+}
+.fa-brands{
+    color: #fff;
+    font-size: 18px;
+}
+.navbar{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 30px;
+}
+.navbar img{
+    width: 80px;
+    height: 80px;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 70%;
+    margin-right: 120px;
+}
+.navmenu a{
+    font-size: 16px;
+    font-weight: 700;
+}

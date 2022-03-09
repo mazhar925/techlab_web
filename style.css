@@ -10,10 +10,10 @@
 .headerSection{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/back_tech1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/tech_pos.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: fixed;
 }
 .headContainer{
    height: 51px;
@@ -128,7 +128,7 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    margin: 0 15px 0 15px;
+    margin: 0 15px;
 }
 .headContent .headBtn button:nth-child(2){
     background-color: #1F3D83;
@@ -137,5 +137,28 @@
 .ourService{
     width: 100vw;
     height: 100vh;
-
+}
+.ourService .container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+.ourService .container .textContent {
+.ourService .container .textContent h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.ourService .container .textContent p{
+    margin-top: 10px;
+}
+.serviceBox{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(53, 2, 236);
+    margin-top: 30px;
+}
+.serviceBox .box{
+    border: 1px solid green;
+    width: 350px;
+    height: 400px;
 }

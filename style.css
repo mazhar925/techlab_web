@@ -10,7 +10,7 @@
 .headerSection{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/tech_pos.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/back_tech1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
@@ -49,6 +49,7 @@
 .fa-brands{
     color: #fff;
     font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .navbar{
     width: 80%;
@@ -100,7 +101,7 @@
     flex-direction: column;
     width: 80%;
     margin: 0 auto 0 auto;
-    margin-top: 100px;
+    margin-top: 130px;
     text-align: center;
 }
 .headContent h1{
@@ -112,9 +113,10 @@
     color: #fff;
     font-size: 24px;
     font-weight: 300;
+    margin-top: 50px;
 }
 .headContent .headBtn{
-    margin-top: 30px;
+    margin-top: 70px;
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -129,6 +131,7 @@
     font-weight: 500;
     cursor: pointer;
     margin: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .headContent .headBtn button:nth-child(2){
     background-color: #1F3D83;
@@ -137,10 +140,12 @@
 .ourService{
     width: 100vw;
     height: 100vh;
+    background-color: #f6f7ff;
 }
 .ourService .container{
     width: 80%;
-    margin: 80px auto 0 auto;
+    padding-top: 80px;
+    margin: 0 auto;
     text-align: center;
 }
 .ourService .container .textContent{
@@ -161,14 +166,15 @@
     text-align: center;
 }
 .serviceBox .box{
-    border: 1px solid rgb(235, 234, 234);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     width: 350px;
-    height: 400px;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 .box .img{
     background-color: #2AC59F;
@@ -191,12 +197,46 @@
 }
 .box button{
     margin-top: 20px;
-    color: #1F3D83;
+    color: #fff;
     width: 150px;
     height: 50px;
     border-radius: 30px;
     border: 1px solid #1F3D83;
     outline: none;
     font-size: 14px;
+    background-color: #1F3D83;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    cursor: pointer;
+}
+.about{
+    width: 100vw;
+    height: 100vh;
     background-color: #fff;
+}
+.about .aboutContainer{
+    width: 80%;
+    padding-top: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.about .aboutContainer .aboutPart{
+    width: 40%;
+    text-align: center;
+}
+.about .aboutContainer .aboutPart p{
+    margin-top: 20px;
+}
+.about .aboutContainer .aboutPart button{
+    margin-top: 30px;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #1F3D83;
+    outline: none;
+    font-size: 12px;
+    background-color: #1F3D83;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    cursor: pointer;
 }

@@ -143,7 +143,10 @@
     margin: 80px auto 0 auto;
     text-align: center;
 }
-.ourService .container .textContent {
+.ourService .container .textContent{
+    width: 60%;
+    margin: 0 auto;
+}
 .ourService .container .textContent h1{
     font-size: 32px;
     font-weight: bold;
@@ -154,11 +157,46 @@
 .serviceBox{
     display: flex;
     justify-content: space-between;
-    border: 1px solid rgb(53, 2, 236);
     margin-top: 30px;
+    text-align: center;
 }
 .serviceBox .box{
-    border: 1px solid green;
+    border: 1px solid rgb(235, 234, 234);
     width: 350px;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.box .img{
+    background-color: #2AC59F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.box p{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.box button{
+    margin-top: 20px;
+    color: #1F3D83;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #1F3D83;
+    outline: none;
+    font-size: 14px;
+    background-color: #fff;
 }

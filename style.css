@@ -6,14 +6,35 @@
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
     text-decoration: none;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+  }
+  
 .headerSection{
     width: 100vw;
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/back_tech1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
+    overflow: hidden;
 }
 .headContainer{
    height: 51px;
@@ -25,7 +46,7 @@
     flex-direction: row;;
     height: 50px;
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 .socialInfo{
     list-style: none;
@@ -100,8 +121,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 0 auto 0 auto;
-    margin-top: 130px;
+    margin: 120px auto;
     text-align: center;
 }
 .headContent h1{
@@ -139,12 +159,12 @@
 }
 .ourService{
     width: 100vw;
-    height: 100vh;
     background-color: #f6f7ff;
 }
 .ourService .container{
     width: 80%;
     padding-top: 80px;
+    padding-bottom: 100px;
     margin: 0 auto;
     text-align: center;
 }
@@ -158,12 +178,15 @@
 }
 .ourService .container .textContent p{
     margin-top: 10px;
+    font-size: 18px;
 }
 .serviceBox{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 30px;
     text-align: center;
+    overflow: hidden;
 }
 .serviceBox .box{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -175,8 +198,9 @@
     flex-direction: column;
     border-radius: 10px;
     background-color: #fff;
+    margin-bottom: 20px;
 }
-.box .img{
+.serviceBox .box .img{
     background-color: #2AC59F;
     width: 100px;
     height: 100px;
@@ -186,21 +210,22 @@
     justify-content: center;
     align-items: center;
 }
-.box h3{
-    font-size: 18px;
+.serviceBox .box h3{
+    font-size: 20px;
     font-weight: 700;
 }
-.box p{
+.serviceBox .box p{
     margin-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 18px;
 }
-.box button{
+.serviceBox .box button{
     margin-top: 20px;
     color: #fff;
     width: 150px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 1px solid #1F3D83;
     outline: none;
     font-size: 14px;
@@ -210,33 +235,147 @@
 }
 .about{
     width: 100vw;
-    height: 100vh;
     background-color: #fff;
+    overflow: hidden;
 }
 .about .aboutContainer{
     width: 80%;
-    padding-top: 120px;
-    margin: 0 auto;
+    margin: 10% auto;
     display: flex;
     justify-content: space-between;
 }
 .about .aboutContainer .aboutPart{
     width: 40%;
-    text-align: center;
+    text-align: left;
 }
 .about .aboutContainer .aboutPart p{
     margin-top: 20px;
+    font-size: 20px;
+}
+.about .aboutContainer .aboutPart h3{
+    font-size: 22px;
+    font-weight: 700;
 }
 .about .aboutContainer .aboutPart button{
     margin-top: 30px;
     color: #fff;
-    width: 100px;
-    height: 30px;
-    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
     border: 1px solid #1F3D83;
     outline: none;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #1F3D83;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
     cursor: pointer;
+}
+.aboutPart2{
+    width: 35%;
+    display: flex;
+}
+.featureSection{
+    width: 100vw;
+    background-color: #f6f7ff;
+    overflow: hidden;
+}
+.featureSection .featureContainer{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.featureSection .featureContainer .featureHeadline{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.featureSection .featureContainer .featureHeadline h3{
+    font-size: 32px;
+}
+.featureSection .featureContainer .featureHeadline p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.featureSection .featureContainer .featureCardCon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.featureSection .featureContainer .featureCardCon .featureBox{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.featureBox .featureImg{
+    background-color: #2AC59F;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.featureText{
+    width: 100%;
+    text-align: justify;
+}
+.testimonial{
+    width: 100vw;
+    overflow: hidden;
+}
+.testimonial .testContainer{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.testimonial .testContainer .textContent{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.testimonial .testContainer .testBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.testimonial .testContainer .testBox .smallBox{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 320px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #f6f7ff;
+    margin-bottom: 20px;
+}
+.testimonial .testContainer .testBox .smallBox .imgTest{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background-color: #1F3D83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 5px;
+}
+.fa-solid{
+    font-size: 12px;
+    color: #000;
+    position: relative;
+    top: -10px;
 }

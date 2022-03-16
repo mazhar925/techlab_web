@@ -243,10 +243,14 @@
     margin: 10% auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about .aboutContainer .aboutPart{
     width: 40%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .about .aboutContainer .aboutPart p{
     margin-top: 20px;
@@ -329,7 +333,7 @@
 }
 .testimonial{
     width: 100vw;
-    overflow: hidden;
+    background-color: #F2F2F2;
 }
 .testimonial .testContainer{
     width: 80%;
@@ -344,38 +348,147 @@
     width: 60%;
     margin: 0 auto;
 }
-.testimonial .testContainer .testBox{
+.testimonial .testContainer .textContent h1{
+    margin-bottom: 10px;
+}
+.testimonial .testContainer .testCardContainer{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
-.testimonial .testContainer .testBox .smallBox{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    width: 320px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
+.testimonial .testContainer .testCard{
+    height: 300px;
+    width: 450px;
+    box-sizing: border-box;
     background-color: #f6f7ff;
-    margin-bottom: 20px;
-}
-.testimonial .testContainer .testBox .smallBox .imgTest{
-    border: 5px solid #fff;
-    border-radius: 50%;
-    background-color: #1F3D83;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 50px auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 5px;
+    justify-content: space-between;
 }
-.fa-solid{
-    font-size: 12px;
-    color: #000;
-    position: relative;
-    top: -10px;
+.testimonial .testContainer .testCard .cardImg{
+    width: 150px;
+    height: 250px;
+    background-color: #000;
+    color: #f1f1f1;
+    margin: auto 20px;
+    overflow: hidden;
+}
+.testimonial .testContainer .testCard .cardImg img{
+    width: 100%;
+    height: 100%;
+}
+.testimonial .testContainer .testCard .cardText{
+    width: 250px;
+    margin: auto;
+}
+.testimonial .testContainer .testCard .cardText p:first-child{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.testimonial .testContainer .testCard .cardText p:nth-child(2){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.clients{
+    width: 100vw;
+    background-color: #F7F9FB;
+}
+.clients .clientsContainer{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.clients .clientsContainer .titleClients{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.clients .clientsContainer .titleClients h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.clients .clientsContainer .clientsImg{
+    width: 120px;
+    height: 120px;
+    filter: grayscale(1);
+    overflow: hidden;
+}
+.clients .clientsContainer .clientsImg:hover{
+    filter: grayscale(0);
+}
+
+.clients .clientsContainer .clientsImg img{
+    width: 100%;
+    height: 100%;
+}
+.demoReq{
+    width: 100vw;
+    background-color: #1F3D83;
+}
+.demoReq .demoCon{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.demoReq .demoCon h2{
+    color: #fff;
+    text-align: center;
+}
+.demoReq .demoCon button{
+    width: 200px;
+    height: 50px;
+    background-color: #2AC59F;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.footer{
+    width: 100vw;
+    background-color: #1D222B;
+}
+.footer .footerContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+}
+.footer .footerContainer .infoAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 250px;
+    color: #fff;
+}
+.footer .footerContainer .infoAbout p{
+    text-align: left;
+}
+.footer .footerContainer .infoAbout img{
+    width: 100px;
+    height: 80px;
+}
+.footer .footerContainer .footerLinks{
+    width: 40%;
+}
+.footer .footerContainer .footerLinks a{
+    color: #fff;
+}
+.footer p{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
 }
